@@ -1,7 +1,7 @@
 
 <h1 align="center">
     <br>
-    <img src="./imgs/logo.png" alt="Web-BO" width="200">
+    <img src="./imgs/loop.png" alt="Web-BO" width="200">
     <br>
     Bayesian optimization for guided chemical design
     <br>
