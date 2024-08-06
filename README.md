@@ -11,8 +11,8 @@
 
 <p align="center">
     <a href="#key-features">key features</a> •
+    <a href="#installation-instructions">installation instructions</a> •
     <a href="#examples">examples</a> •
-    <a href="citation">citation</a> •
     <a href="#acknowledgements">acknowledgements</a> •
     <a href="#license">license</a>
 </p>
@@ -21,8 +21,11 @@
 
 ## key features
 
-## examples
+## installation instructions
 
+
+
+## examples
 
 ## acknowledgements
 This work was co-developed by Dr. Lauren Lee (Assistant Professor, UCL) and Dr. Austin Mroz (AI in Science Research Fellow, Imperial College London)
