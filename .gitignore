@@ -1,1 +1,4 @@
 .venv/
+.BOFire/
+.BOTorch/
+.BayBE/
