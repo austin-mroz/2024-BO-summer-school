@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = ""
+maintainers = [
+  { name = "Austin Mroz", email = "a.mroz@imperial.ac.uk" },
+]
+
+dependencies = []
+requires-python = ">=3.11"
+dynamic = ["version"]
+readme = "README.md"
+description = """\
+  Notebooks and scripts to support Sargent \
+  Centre for Process Systems Engineering 2024 BO Summer School.\
+"""
+
+[project.optional-dependencies]
+dev = [
+  "ruff",
+  "mypy",
+  "build",
+  "twine",
+  "furo",
+]
+
+[project.urls]
+github = "https://github.com/austin-mroz/2024-BO-summer-school"
+
+[tool.setuptools_scm]
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["ANN101", "ANN401", "COM812", "ISC001"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+show_error_codes = true
+implicit_optional = false
+warn_no_return = true
+strict_optional = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+warn_unreachable = true
+disallow_any_generics = true
+
+[[tool.mypy.overrides]]
+module = []
+ignore_missing_imports = true
