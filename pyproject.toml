@@ -10,6 +10,7 @@ maintainers = [
 
 dependencies = [
   "notebook",
+  "baybe",
 ]
 requires-python = ">=3.11"
 dynamic = ["version"]
@@ -43,6 +44,9 @@ ignore = ["ANN101", "ANN401", "COM812", "ISC001"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.ruff.per-file-ignores]
+"explore-bo-implementations/*" = []
 
 [tool.mypy]
 show_error_codes = true

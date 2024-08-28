@@ -12,6 +12,9 @@ dev:
 check:
   #!/usr/bin/env bash
 
+  error=0
+  trap error=1 ERR
+
   echo
   (set -x; ruff check .)
   test $? = 0
