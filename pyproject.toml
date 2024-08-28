@@ -10,7 +10,7 @@ maintainers = [
 
 dependencies = [
   "notebook",
-  "baybe",
+  "baybe[mypy]",
   "numpy",
   "pandas",
 ]
