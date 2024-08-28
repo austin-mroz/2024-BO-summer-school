@@ -3,3 +3,5 @@
 .BOTorch/
 .BayBE/
 .gauche/
+*.egg-info/
+.ipynb_checkpoints/

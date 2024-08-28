@@ -3,12 +3,14 @@ requires = ["setuptools", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = ""
+name = "boschool"
 maintainers = [
   { name = "Austin Mroz", email = "a.mroz@imperial.ac.uk" },
 ]
 
-dependencies = []
+dependencies = [
+  "notebook",
+]
 requires-python = ">=3.11"
 dynamic = ["version"]
 readme = "README.md"
@@ -19,6 +21,7 @@ description = """\
 
 [project.optional-dependencies]
 dev = [
+  "nbqa",
   "ruff",
   "mypy",
   "build",
