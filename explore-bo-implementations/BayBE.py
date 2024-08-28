@@ -1,3 +1,5 @@
+"""BayBE implementation of BO."""
+
 import numpy as np
 import pandas as pd
 from baybe import Campaign
