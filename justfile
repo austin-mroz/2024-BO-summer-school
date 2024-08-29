@@ -20,11 +20,11 @@ check:
   test $? = 0
 
   echo
-  (set -x; nbqa mypy tutorial-notebooks)
+  (set -x; nbqa mypy explore-bo-implementations tutorial-notebooks)
   test $? = 0
 
   echo
-  (set -x; mypy explore-bo-implementations)
+  (set -x; mypy explore-bo-implementations tutorial-notebooks)
   test $? = 0
 
   test $error = 0
