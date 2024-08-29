@@ -17,16 +17,25 @@ from baybe.recommenders import (
 )
 from baybe.searchspace import SearchSpace
 from baybe.surrogates import GaussianProcessSurrogate
-from baybe.targets import NumericalTarget
+from baybe.targets import NumericalTarget, TargetMode
 
 
-def rerun_bo(campaign_db_entry, new_measurements, batch_size=1):
+def rerun_bo(
+    campaign_db_entry,
+    new_measurements: pd.DataFrame,
+    batch_size: int = 1,
+) -> pd.DataFrame:
     campaign = Campaign.from_json(campaign_db_entry.campaign_info)
     campaign.add_measurements(new_measurements)
     return campaign.recommend(batch_size=batch_size)
 
 
-def run_bo(expt_info, target, opt_type="MAX", batch_size=1):
+def run_bo(
+    expt_info,
+    target: str,
+    opt_type: TargetMode = TargetMode.MAX,
+    batch_size: int = 1,
+) -> tuple[pd.DataFrame, Campaign]:
     variable_type_dict = pd.read_json(expt_info.variables)
     baybe_paramter_list = []
     for col in variable_type_dict.columns:
@@ -64,7 +73,7 @@ def run_bo(expt_info, target, opt_type="MAX", batch_size=1):
 
     objective = Objective(
         mode="SINGLE",
-        targets=[NumericalTarget(name=target, mode=f"{opt_type}")],
+        targets=[NumericalTarget(name=target, mode=opt_type)],
     )
 
     recommender = TwoPhaseMetaRecommender(
