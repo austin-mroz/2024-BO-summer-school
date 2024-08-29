@@ -31,12 +31,12 @@ def rerun_bo(
 
 
 def run_bo(
-    expt_info,
+    experiment_info,
     target: str,
     opt_type: TargetMode = TargetMode.MAX,
     batch_size: int = 1,
 ) -> tuple[pd.DataFrame, Campaign]:
-    variable_type_dict = pd.read_json(expt_info.variables)
+    variable_type_dict = pd.read_json(experiment_info.variables)
     baybe_paramter_list = []
     for col in variable_type_dict.columns:
         df = variable_type_dict[col].T
@@ -80,7 +80,7 @@ def run_bo(
         initial_recommender=RandomRecommender(),
         recommender=SequentialGreedyRecommender(
             surrogate_model=GaussianProcessSurrogate(),
-            acquisition_function_cls=f"{expt_info.acqFunc}",
+            acquisition_function_cls=f"{experiment_info.acqFunc}",
             allow_repeated_recommendations=False,
             allow_recommending_already_measured=False,
         ),
