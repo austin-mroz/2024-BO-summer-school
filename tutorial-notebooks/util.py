@@ -20,6 +20,7 @@ def evaluate_candidates(candidates: pd.DataFrame) -> pd.DataFrame:
         "Temperature": "temperature",
         "Catalyst": "catalyst",
         "Yield": "yld",
+        "TON": "ton",
     }
     candidates = candidates.rename(columns=name_map)
     emulator = summit.get_pretrained_reizman_suzuki_emulator(case=1)
@@ -35,5 +36,7 @@ def evaluate_candidates(candidates: pd.DataFrame) -> pd.DataFrame:
             "Catalyst": emulator_output["Catalyst"],
             "Yield": emulator_output["Yield"],
             "valid_Yield": np.ones(len(emulator_output.index)),
+            "TON": emulator_output["TON"],
+            "valid_TON": np.ones(len(emulator_output.index)),
         }
     )
