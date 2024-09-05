@@ -67,7 +67,13 @@ this study.
 
 This case study takes advantage of the experiment emulators offered by the <a    zhref="https://github.com/sustainable-processes/summit" class="tooltip-test" title="Tooltip">Summit</a> package. Specifically, the <a href="https://gosummit.readthedocs.io/en/latest/experiments_benchmarks/implemented_benchmarks.html#cross-coupling-emulator-benchmarks" class="tooltip-test" title="Tooltip">Suzuki-Miyaura Cross Coupling Emulator</a>.
 
+## optimisation task demonstration
+
+There are a wealth of additional tutorials featuring BO for chemical tasks.
+
+Consider exploring <a zhref="https://github.com/SimonEnsemble/multi-fidelity-BO-of-COFs-for-Xe-Kr-seps/tree/master/run_BO" class="tooltip-test" title="Tooltip">MFBO</a>, <a zhref="https://github.com/leojklarner/gauche" class="tooltip-test" title="Tooltip">GPs for molecules</a>.
+
 ## acknowledgements
-This work was co-developed by Dr. Lauren Lee (Assistant Professor, UCL) and Dr. Austin Mroz (AI in Science Research Fellow, Imperial College London)
+This work was co-developed by Dr. Lukas Turcani (Lead Software Engineer, AIchemy, Imperial College London) and Dr. Austin Mroz (AI in Science Research Fellow, Imperial College London)
 
 ## license
