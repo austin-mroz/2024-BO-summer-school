@@ -71,7 +71,7 @@ This case study takes advantage of the experiment emulators offered by the <a   
 
 There are a wealth of additional tutorials featuring BO for chemical tasks.
 
-Consider exploring <a zhref="https://github.com/SimonEnsemble/multi-fidelity-BO-of-COFs-for-Xe-Kr-seps/tree/master/run_BO" class="tooltip-test" title="Tooltip">MFBO</a>, <a zhref="https://github.com/leojklarner/gauche" class="tooltip-test" title="Tooltip">GPs for molecules</a>.
+Consider exploring <a    zhref="https://github.com/SimonEnsemble/multi-fidelity-BO-of-COFs-for-Xe-Kr-seps/tree/master/run_BO" class="tooltip-test" title="Tooltip">MFBOt</a>, and <a zhref="https://github.com/leojklarner/gauche" class="tooltip-test" title="Tooltip">GPs for molecules</a>.
 
 ## acknowledgements
 This work was co-developed by Dr. Lukas Turcani (Lead Software Engineer, AIchemy, Imperial College London) and Dr. Austin Mroz (AI in Science Research Fellow, Imperial College London)
