@@ -28,8 +28,8 @@ This repo contains tutorial notebooks and additional resources for the 2024 Sarg
 ```console
 foo@bar:~$ git clone https://github.com/austin-mroz/2024-BO-summer-school
 foo@bar:~$ cd 2024-BO-summer-school
-foo@bar:~/webBO$ conda env create -p ./.venv -f environment.yml
-foo@bar:~/webBO$ conda activate ./.venv
+foo@bar:~$ conda env create -p ./.venv -f environment.yml
+foo@bar:~$ conda activate ./.venv
 ```
 
 ## optimisation task demonstration
