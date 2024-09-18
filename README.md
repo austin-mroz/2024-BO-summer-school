@@ -7,23 +7,26 @@
     <br>
 </h1>
 
-<h4 align="center">Notebooks and scripts to support Sargent Centre for Process Systems Engineering 2024 BO Summer School</h4>
+<h4 align="center">Notebooks and scripts to support the materials delivered at the Sargent Centre for Process Systems Engineering 2024 BO Summer School and the 2024 AIchemy BO for Chemistry workshop.</h4>
 
 <p align="center">
-    <a href="#key-features">key features</a> •
+    <a href="#overview">overview</a> •
     <a href="#installation-instructions">installation instructions</a> •
-    <a href="#examples">examples</a> •
+    <a href="#case-study-descriptions">case study descriptions</a> •
+    <a href="#additional-resources">additional resources</a> •
     <a href="#acknowledgements">acknowledgements</a> •
     <a href="#license">license</a>
 </p>
 
 <br>
 
-## key features
+## overview
 
-This repo contains tutorial notebooks and additional resources for the 2024 Sargent Process Engineering Bayesian optimization summer shool.
+This repo contains tutorial notebooks featuring BO for two chemical tasks. We explore implementing BO using several available packages, including BayBE, BOFire, and BOTorch.
 
 ## installation instructions
+
+We encourage you to take advantage of Google colab to run the tutorial notebooks included in this repository. Should you wish to run them locally, please follow the installation instructions below:
 
 ```console
 foo@bar:~$ git clone https://github.com/austin-mroz/2024-BO-summer-school
@@ -32,7 +35,9 @@ foo@bar:~$ conda env create -p ./.venv -f environment.yml
 foo@bar:~$ conda activate ./.venv
 ```
 
-## optimisation task demonstration
+## case study descriptions
+
+### catalysis
 
 To help you get familiar with all that Web-BO has to offer, we provide an optimization case study that takes advantage of existing reaction emulators to acquire the experimental measurements.
 
@@ -67,13 +72,25 @@ this study.
 
 This case study takes advantage of the experiment emulators offered by the <a    href="https://github.com/sustainable-processes/summit" class="tooltip-test" title="Tooltip">Summit</a> package. Specifically, the <a href="https://gosummit.readthedocs.io/en/latest/experiments_benchmarks/implemented_benchmarks.html#cross-coupling-emulator-benchmarks" class="tooltip-test" title="Tooltip">Suzuki-Miyaura Cross Coupling Emulator</a>.
 
-## optimisation task demonstration
+### covalent-organic framework design
 
-There are a wealth of additional tutorials featuring BO for chemical tasks.
+## additional resources
 
-Consider exploring <a href="https://github.com/SimonEnsemble/multi-fidelity-BO-of-COFs-for-Xe-Kr-seps/tree/master/run_BO" class="tooltip-test" title="Tooltip">MFBO</a>, and <a href="https://github.com/leojklarner/gauche" class="tooltip-test" title="Tooltip">GPs for molecules</a>.
+There are a wealth of additional tutorials on the general BO framework, as well as materials specifically featuring BO for chemical tasks. (This is not an exhaustive list)
+
+### general BO tutorials and notebooks
+
+* [GPs hands-on code tutorial](https://github.com/joelpaulson/Sargent_Centre_BO_Summer_School_2024/blob/main/GP_Hands_On_Code_Tutorial.ipynb)
+
+### chemistry-specific tutorials and examples
+
+#### [GAUCHE](https://leojklarner.github.io/gauche) tutorials
+* [Bayesian Optimisation Over Molecules](https://leojklarner.github.io/gauche/notebooks/bayesian_optimisation_over_molecules.html)
+* [Multioutput Gaussian Processes for Multitask Learning](https://leojklarner.github.io/gauche/notebooks/multitask_gp_regression_on_molecules.html)
+
+#### BO for COFs
+* [BO for COFs](https://github.com/SimonEnsemble/BO_of_COFs)
+* [MFBO for COFs](https://github.com/SimonEnsemble/multi-fidelity-BO-of-COFs-for-Xe-Kr-seps/tree/master/run_BO)
 
 ## acknowledgements
 This work was co-developed by Dr. Lukas Turcani (Lead Software Engineer, AIchemy, Imperial College London) and Dr. Austin Mroz (AI in Science Research Fellow, Imperial College London)
-
-## license
