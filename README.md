@@ -91,6 +91,3 @@ There are a wealth of additional tutorials on the general BO framework, as well 
 #### BO for COFs
 * [BO for COFs](https://github.com/SimonEnsemble/BO_of_COFs)
 * [MFBO for COFs](https://github.com/SimonEnsemble/multi-fidelity-BO-of-COFs-for-Xe-Kr-seps/tree/master/run_BO)
-
-## acknowledgements
-This work was co-developed by Dr. Lukas Turcani (Lead Software Engineer, AIchemy, Imperial College London) and Dr. Austin Mroz (AI in Science Research Fellow, Imperial College London)
