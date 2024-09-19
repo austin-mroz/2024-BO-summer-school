@@ -14,8 +14,6 @@
     <a href="#installation-instructions">installation instructions</a> •
     <a href="#case-study-descriptions">case study descriptions</a> •
     <a href="#additional-resources">additional resources</a> •
-    <a href="#acknowledgements">acknowledgements</a> •
-    <a href="#license">license</a>
 </p>
 
 <br>
